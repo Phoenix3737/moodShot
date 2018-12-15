@@ -2,134 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Mood Shot!</title>
     <!-- Favicon link -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <!-- Linking Google Fonts (for icons and the css they use.) -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">    
-    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body class="grey lighten-4">
-    <!-- Box asking for name and age input -->
-    <!-- Modal page to open on load -->
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-body">
-            <div class="form-group">
-                <h1>Welcome To MoodShot!</h1>
-                <h3>A great way to improve your mood!<h3>
-                <h2>Are you 21 years old or older?</h2>
-                <button type="button" id="yes" class="btn btn-default btn-success btn-block"><i class="material-icons">thumb_up</i> Yes</button>
-                <button type="button" id="no" class="btn btn-default btn-success btn-block"><i class="material-icons">thumb_down</i> No</button>
+
+
+<!-- Modal -->
+<!-- <div class="container">
+    <div class="modal fade modal" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h1 class="modal-title text-center" id="exampleModalCenterTitle">Welcome to Mood Shot!</h1>
+
+
+                </div>
+                <div class="modal-body">
+                    <h2 class="text-center"> Are you 21 years or older?</h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="yes" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+                    <button type="button" id="no" class="btn btn-primary">No&nbsp;</button>
+                </div>
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" id="left-side">
+                <img class="circle" src="images/moodShot-logo.jpg" style="height: 240px; width: 240px">
+                <h3>Find a drink for your mood</h3>
+                <input placeholder="Paste Link Here" id="link-url" type="text" class="validate">
+                <button class="btn waves-effect btn-large red lighten-1" id="link-submit" type="submit" name="action">Submit
+                        <i class="material-icons right"></i></button>
+                <img class="circle" id="face-img" src="images/moodShot-logo.jpg" style="width: 100%">
+        </div>
+        <div class="col-md-8">
+                <h1 id="comment-header"></h1>
+                <p id="comment-text"></p>
+                
+        
+                <img class="responsive-img" id="drink-image" src="" style="height: 350px; width: 350px">
+                <h6 id="recipe"> </h6>
+                <h6 id="instructions"> </h6>
+        
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------->
 
 
-    <!-- sidebar stuff goes here -->
 
-    <ul id="slide-out" class="sidenav sidenav-fixed grey lighten-2">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <!-- for color modification -->
-                </div>
-                <a href="#user">
-                    <img class="circle" src="images/moodShot-logo.jpg" style="height: 240px; width: 240px">
-                </a>
-                <a href="#name">
-                    <span class="black-text name center-align">Find a drink for your mood</span>
-                </a>
-            </div>
-        </li>
-        <div class="divider red lighten-1">
-
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!-- submit button -->
-        <!-- need to look into putting the button at the bottom -->
-        <li>
-            <input placeholder="Paste Link Here!" id="link-url" type="text" class="validate">
-        </li>
-        <br>
-        <li>
-            <button class="btn waves-effect btn-large red lighten-1" id="link-submit" type="submit" name="action">Submit
-                <i class="material-icons right"></i>
-            </button>
-        </li>
-    </ul>
-    <!-- !! Still need to look into if you need this in a fixed sidebar -->
-    <a href="#" data-target="slide-out" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-    </a>
-
-    <!-- MAIN CONTENT PAGE main tag here-->
-    <main>
-        <div class="header center-align">
-            <!-- header content -->
-            <h1 id="comment-header"></h1>
-            <p id="comment-text"></p>
-        </div>
-        <br>
-        <div class="divider black red lighten-1">
-            <!-- fancy divider shit -->
-        </div>
-        <br>
-        <div class="container" style="width: 80%">
-            <div class="row grey lighten-4">
-                <div class="col s12 center-align">
-                    <!-- put the image from the ajax request here -->
-                    <!-- !!!!!! need to have some more styling for the image to center it into the row its in. also find out the size of the image is -->
-                    <img class="responsive-img" id="drink-image" src="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 center-align">
-                    <h2 id="drink-name">Welcome to MoodShot!</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="row grey lighten-4">
-                <div class="col s12 center-align">
-                    <!-- where the type of glass and maybe the info on the glass from the cocktail database -->
-                    <h5 id="glass">Copy the image address of any image you want and put it into the text box on the left. Now click the submit button to generate your cocktail! </h5>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="row grey lighten-4">
-                <div class="col s12 center-align">
-                    <!-- this is where the recipe content from the ajax request is posted. -->
-                    <h6 id="recipe"> </h6>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="row grey lighten-4">
-                <div class="col s12 center-align">
-                    <!-- this is where the recipe content from the ajax request is posted. -->
-                    <h6 id="instructions"> </h6>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="app.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 
 </html>

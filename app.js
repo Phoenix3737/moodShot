@@ -3,11 +3,11 @@ $(window).on('load', function () {
     $('#modal1').modal({
         dismissible: false
     });  
-    $('#modal1').modal('open');  
+    // $('#modal1').modal('open');  
 
-    $("#yes").on("click", function() {
-        $('#modal1').modal('close');
-    });
+    // $("#yes").on("click", function() {
+    //     $('#modal1').modal('close');
+    // });
     //Redirect if under 21 years of age
     $("#no").on("click", function() {
         window.location.assign("https://www.responsibility.org/")
@@ -45,7 +45,7 @@ var messages = [{
 $("#link-submit").on("click", function (event) {
     event.preventDefault();
     var faceURL = $("#link-url").val().trim();
-
+    var faceImgTag = $("#face-img").attr("src", faceURL)
 
     // moving image file to some form that can pass into query
 
@@ -54,7 +54,7 @@ $("#link-submit").on("click", function (event) {
     // var faceImage = "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/13625394_10154011762247869_1447612658950188866_n.jpg?_nc_cat=0%26oh=9af591b71b9810b065670cc7da47f56a%26oe=5B6BA40E";
 
 
-    var faceQuery = "https://cors-anywhere.herokuapp.com/https://api-us.faceplusplus.com/facepp/v3/detect?api_key=s0vdP0fNEcYFymfT0sw0pt-pGCOp37-y&api_secret=7Ri6sHu3XL0WdXmylro7Rvz_v8JJKV_M&image_url=" + faceURL + "&return_attributes=emotion";
+    var faceQuery = "https://cors-anywhere.herokuapp.com/https://api-us.faceplusplus.com/facepp/v3/detect?api_key=otg0XdiKVDR9VMNBD4qfht2JThuOTgct&api_secret=MwhmO2tldAFKKIzMflz6QXLxXzYrEEIT&image_url=" + faceURL + "&return_attributes=emotion";
 
     // face++ ajax request
     var emotions;

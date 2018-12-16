@@ -28,14 +28,14 @@
 
 
 <!-- Modal -->
-<!-- <div class="container">
+<div class="container">
     <div class="modal fade modal" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
 
-                    <h1 class="modal-title text-center" id="exampleModalCenterTitle">Welcome to Mood Shot!</h1>
+                    <h1 class="modal-title text-center" id="ModalCenterTitle">Welcome to Mood Shot!</h1>
 
 
                 </div>
@@ -43,30 +43,30 @@
                     <h2 class="text-center"> Are you 21 years or older?</h2>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="yes" class="btn btn-secondary" data-dismiss="modal">Yes</button>
-                    <button type="button" id="no" class="btn btn-primary">No&nbsp;</button>
+                    <button type="button" id="yes" class="btn btn-color" data-dismiss="modal">Yes</button>
+                    <button type="button" id="no" class="btn btn-color">No&nbsp;</button>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <div class="container">
     <div class="row">
         <div class="col-md-4" id="left-side">
-                <img class="circle" src="images/moodShot-logo.jpg" style="height: 240px; width: 240px">
-                <h3>Find a drink for your mood</h3>
-                <input placeholder="Paste Link Here" id="link-url" type="text" class="validate">
-                <button class="btn waves-effect btn-large red lighten-1" id="link-submit" type="submit" name="action">Submit
+                <img class="logo center-block" src="images/moodShot-logo.png" style="width: 65%">
+                <!-- <h3>Find a drink for your mood</h3> -->
+                <input placeholder="Paste a Link of Your Photo Here" id="link-url" type="text" class="validate">
+                <button class="btn btn-large" id="link-submit" type="submit" name="action">Submit
                         <i class="material-icons right"></i></button>
-                <img class="circle" id="face-img" src="images/moodShot-logo.jpg" style="width: 100%">
+                <img class="circle" id="face-img" src="images/avatar-placeholder.png" style="width: 100%">
         </div>
         <div class="col-md-8">
                 <h1 id="comment-header"></h1>
-                <p id="comment-text"></p>
+                <h3 id="comment-text"></h3>
                 
-        
-                <img class="responsive-img" id="drink-image" src="" style="height: 350px; width: 350px">
+                <img class="howToPlay" id="how" src="images/instructions.png" style="width: 100%">
+                <img class="responsive-img" id="drink-image" src="" alt="">
                 <h6 id="recipe"> </h6>
                 <h6 id="instructions"> </h6>
         

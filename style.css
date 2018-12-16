@@ -15,7 +15,52 @@ body {
     background-size: 100%;
 }
 
+h3 {
+    text-align: center;
+}
 
+.validate {
+    width: 274px;
+    height: 34px;
+    margin-bottom: 25px;
+}
+
+#drink-image {
+    height: 350px;
+     width: 350px;
+}
+
+.modal {
+    background-image:url("images/bodyBackground.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.btn-color {
+    background-color: #fd4a19;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+.modal-footer {
+    border-top: none;
+    font-weight: bold;
+}
+
+.modal-header {
+    border-bottom: none;
+    font-weight: bolder;
+}
+
+#link-submit {
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: bolder;
+}
 
 #00c4cc
 #fd4a19

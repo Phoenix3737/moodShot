@@ -45,7 +45,8 @@ var messages = [{
 $("#link-submit").on("click", function (event) {
     event.preventDefault();
     var faceURL = $("#link-url").val().trim();
-    var faceImgTag = $("#face-img").attr("src", faceURL)
+    var faceImgTag = $("#face-img").attr("src", faceURL);
+    $("#how").attr('src', '');
 
     // moving image file to some form that can pass into query
 

@@ -1,19 +1,27 @@
 # moodShot
 
-// id's for use in javascript //
+Use these photo links to avoid a CORS response.
 
-text box for the link (id to grab the link from) = "link-url" --> this is <input>
-submit button for the link  (id to access the submit button on the on sidebar) = "link-submit" --> is <button>
+Happy
+https://i2.wp.com/www.success.com/wp-content/uploads/2016/09/johnaddison_waystobelikeable.jpg?fit=916%2C667&ssl=1
 
-main page header heading (the large text for our content) = "comment-header" --> this is a <h2>
-main page header text (text under the large text) = "comment-text" --> this is a <p>
+Suprised
+https://i2.wp.com/www.scottfreeclinic.org/wp-content/uploads/2018/04/surprise-e1522579747818.jpg?fit=400%2C400
 
-main page row one image content (image generated for the drink) = "drink-image" --> this is an <img>
-main page row one header in the content tag (name of the drink) = "drink-name" --> this is a <h5>
-main page row two text content (description of drink) = "drink-description" --> this is a <p>
+Disgusted
+https://i2.wp.com/www.sfcatholic.org/cfs/wp-content/uploads/sites/8/2016/10/Sad-Child.jpg
 
-main page row two text content (glass used) = "glass" --> this is a <p>
+Afraid
+https://i2.wp.com/www.inspiredlivingmedical.com/wp-content/uploads/2016/04/anger.jpg?resize=660%2C440
 
-main page row three text content (Recipe) = "recipe" --> this is a <p>
+Angry
+https://i2.wp.com/evelyndoyle.com/wp-content/uploads/2016/08/angry.jpg?resize=560%2C360&ssl=1
+
+Neutral
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmwJcYueXPo0eK4PW-mEkW30OJ4DVWr4GWZB06GceNO7Yzej8EwA
+
+Sad
+https://i0.wp.com/www.thelostgirlsguide.com/wp-content/uploads/20131108_150408.jpg
+
 
 

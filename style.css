@@ -1,12 +1,20 @@
 .col-md-4 {
-    background-color: #fd4a19;
+    /* background-color: #fd4a19; */
+    background-image: url("https://www.dhresource.com/0x0s/f2-albu-g5-M00-FE-E5-rBVaJFlsduKAbmqXAAXcbz3cbNc962.jpg/vintage-dark-brown-wood-planks-vinyl-backdrops.jpg");
     height: 700px;
 }
 
 .col-md-8 {
-    background-color: rgb(0, 196, 204,.7);
+    /* background-color: rgb(0, 196, 204,.7); */
+    background-image: url("images/beer-bottle-caps.jpg");
     height: 700px;
     filter: opacity (50%);
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 
 body {

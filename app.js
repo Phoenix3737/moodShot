@@ -25,7 +25,7 @@ var messages = [{
     message: "It's time to perk up! Try some refreshing Gin based cocktails to help forget about your problems!"
 }, {
     header: "You look Neutral!",
-    message: "I don't know what makes you so aloof, but its creeping me out! Try any of these delicious cocktails to put some emotion in ya"
+    message: "I don't know what makes you so aloof, but its creeping me out! Try this delicious cocktail to put some emotion in ya"
 }, {
     header: "You look disgusted!",
     message: "Whatever you looked were looking at thoroughly disgusted you. Hopefully this scotch based cocktail will wash that disgust out!"

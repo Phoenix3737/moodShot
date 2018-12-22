@@ -52,26 +52,36 @@
 <div class="container border">
     <div class="row">
         <div class="col-md-4" id="left-side">
-                <img class="logo center-block" src="images/moodShot-logo.png" style="width: 65%">
-                <!-- <h3>Find a drink for your mood</h3> -->
-                <input placeholder="Paste a Link of Your Photo Here" id="link-url" type="text" class="validate">
-                <button class="btn btn-large" id="link-submit" type="submit" name="action">Submit
-                        <i class="material-icons right"></i></button>
-            <div class="border">
-                <img  src="images/avatar-placeholder.png" style="width: 100%">
-            </div>
+            <img class="logo center-block" src="images/moodShot-logo.png" style="width: 65%">
+            <!-- <h3>Find a drink for your mood</h3> -->
+            <input placeholder="Paste a Link of Your Photo Here" id="link-url" type="text" class="validate">
+            <button class="btn btn-large" id="link-submit" type="submit" name="action">Submit
+                    <i class="material-icons right"></i></button>
+        <div class="border">
+            <img id="face-img" src="images/avatar-placeholder.png" style="width: 100%">
         </div>
-        <div class="col-md-8">
+    </div>
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-xs-12 center-header">
                 <h1 id="comment-header"></h1>
                 <h3 id="comment-text"></h3>
-                
-                <img class="howToPlay" id="how" src="images/instructions.png" style="width: 100%">
-                <img class="responsive-img" id="drink-image" src="" alt="">
-                <h2 id="drinkName"> </h6>
-                <h6 id="recipe"> </h6>
-                <h6 id="instructions"> </h6>
-        
+            </div>
         </div>
+        <container>
+        <div class="row vcenter">
+            <div class="col-md-6">
+                <img class="howToPlay" id="how" src="images/instructions.png">
+                <img class="responsive-img" id="drink-image" src="" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 id="drinkName"> </h6>
+                <h3 id="recipe"> </h3>
+                <h3 id="instructions"></h3>
+            </div>
+        </container>
+        </div>
+    </div>
     </div>
 </div>
 

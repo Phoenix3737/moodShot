@@ -28,7 +28,7 @@ var messages = [{
     message: "I don't know what makes you so aloof, but its creeping me out! Try this delicious cocktail to put some emotion in ya"
 }, {
     header: "You look disgusted!",
-    message: "Whatever you looked were looking at thoroughly disgusted you. Hopefully this scotch based cocktail will wash that disgust out!"
+    message: "Whatever you were looking at thoroughly disgusted you. Hopefully this scotch based cocktail will wash that disgust out!"
 }, {
     header: "You look Angry!",
     message: "You need to calm the heck down! Cool off with a one of these amazing Rum based tropical cocktails!"

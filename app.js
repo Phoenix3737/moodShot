@@ -93,7 +93,7 @@ $("#link-submit").on("click", function (event) {
             $("#comment-header").text(messages[1].header);
             $("#comment-text").text(messages[1].message);
         } else if (sortedEmotions[0][0] === "neutral") {
-            var queryAlc = "Midori";
+            var queryAlc = "tequila";
             $("#comment-header").text(messages[2].header);
             $("#comment-text").text(messages[2].message);
         } else if (sortedEmotions[0][0] === "disgust") {
